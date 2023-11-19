@@ -518,7 +518,7 @@ a.btn:nth-child(2)::before{
 }
 
 /* Déclaration des animations des barres de compétences  
-    On y ajoute aussi les "@keysframes" pour que l'animation soit effective.   --- */
+    On y ajoute aussi les "@keysframes" pour que l'animation soit effective.  ------------------------- */
 
 .skill-bar .bar .html{
     width: 82%;
@@ -804,6 +804,6 @@ a.btn:nth-child(2)::before{
     }
     100%{
         background: var(--hover-color);
-        box-shadow: var(--neon-box-shadow),
+        box-shadow: var(--neon-box-shadow);
     }
 }
