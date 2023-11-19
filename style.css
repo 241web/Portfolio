@@ -459,11 +459,11 @@ a.btn:nth-child(2)::before{
 }
 
 .service-box p{
-    line-height: 1.6;
     margin: .5rem 0 1.5rem 0;
     letter-spacing: 1px;
     font-weight: 300;
     color: #bdbdbd;
+    line-height: 1.6;
 }
 
 
@@ -490,7 +490,7 @@ a.btn:nth-child(2)::before{
     text-align: center;
 }
 
-/* Comptences Techniques CSS  -------------------------- */
+/* Comptences Techniques CSS  -------------------------------------------------------------------------------- */
 .skill-left .skill-bar .info{
     display: flex;
     justify-content: space-between;
