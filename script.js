@@ -62,3 +62,33 @@ circles.forEach(elem=>{
 
 // mix it up SECTION PORTFOLIO -----------------------------------------------------------------------------------------------//
 var mixer = mixitup('.portfolio-gallery');
+
+/** ACTIVATION DES MENUS  **************************************************/
+let menuLi = document.querySelectorAll('header ul li a');
+let section = document.querySelectorAll('section');
+
+
+function activeMenu(){
+    let len = section.length;
+    while(--len && window.scrollY + 97 < section[len].offsetTop){}
+    menuLi.forEach(sec => sec.classList.remove("active"));
+    menuLi[len].classList.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+
+
+/*====================== Sticky navbar ============================= */
+const header = document.querySelectorAll("header");
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY > 50)
+})
+
+
+
+
+
+
+
+
